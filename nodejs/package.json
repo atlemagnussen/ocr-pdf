@@ -1,0 +1,27 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "ocr pdf",
+  "main": "lib/index.js",
+  "module": "./lib/index.js",
+  "files": [
+    "lib/"
+  ],
+  "type": "module",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test ts-node --esm ./test.ts"
+  },
+  "keywords": [
+    "ocr",
+    "pdf"
+  ],
+  "author": "atlemagnussen",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "pdf-poppler": "^0.2.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
