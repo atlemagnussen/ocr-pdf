@@ -10,5 +10,5 @@ node_modules
 
 .DS_Store
 
-nodejs/images
-nodejs/output
+nodejs/images/
+nodejs/output/
