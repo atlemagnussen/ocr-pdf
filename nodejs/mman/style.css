@@ -1,0 +1,101 @@
+:root {
+    color-scheme: dark light;
+    --un-controls-background: rgba(61, 21, 21, 0.3);
+    --un-fill-one: #F3FBFB;
+    --un-fill-two: #A35B12;
+    --un-top-left: #acd3ef;
+    --un-the-rest: #1c93d3;
+    --un-blue: #0000FF;
+    --un-black: #222;
+    --un-black-light: #444;
+    --un-grey: #bbb;
+    --un-white: #eee;
+    --un-blue-purple: #5068b7;
+    --un-red: rgba(161, 15, 15, 0.685);
+    --un-green: rgb(23, 160, 80);
+    --un-pink: #e9437a;
+    --cyan: #0FF;
+    --cyan-dark: rgb(0, 139, 139);
+}
+.theme-adaptive {
+    --un-main-background: var(--un-white);
+    --un-main-foreground: var(--un-black);
+    --un-link: var(--un-blue-purple);
+    --un-link-visited: var(--un-pink);
+}
+@media (prefers-color-scheme: dark) {
+    .theme-adaptive {
+        --un-main-background: var(--un-black);
+        --un-main-foreground: var(--un-grey);
+        --un-link: var(--un-blue-purple);
+        --un-link-visited: var(--un-pink);
+    }
+}
+html {
+    font-size: 10px;
+}
+body {
+    font-size: 1.6rem;
+    background-color: var(--un-main-background);
+    font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: var(--un-main-foreground);
+}
+article {
+    max-width: 1280px;
+    margin: auto;
+}
+section {
+    page-break-before: always;
+    page-break-after: always;
+}
+a {
+    color: var(--un-link);
+}
+a:visited {
+    color: var(--un-link-visited);
+}
+ul, ol {
+    padding-left: 2rem;
+}
+ul.star {
+    list-style-type: ' ★ '
+}
+
+li li {
+    margin-top: 5px;
+}
+li:not(:last-child) { 
+    margin-bottom: 5px;  
+}
+
+figure {
+    max-width: 100vw;
+    padding: 0.5rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+img {
+    max-width: 100%;
+    margin: 0.1rem;
+}
+.breakstyle {
+    page-break-before: always;
+    page-break-after: always;
+}
+.indent {
+    text-indent: 3em;
+}
+.underline {
+    text-decoration: underline;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.center {
+    text-align: center;
+}

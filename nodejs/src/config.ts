@@ -28,10 +28,17 @@ const ocrOutputFolder = path.join(thisRootPath, outputSubPath)
 if (!fs.existsSync(ocrOutputFolder))
     fs.mkdirSync(ocrOutputFolder)
 
+const outputHtmlSubPath = process.env.HTML_OUTPUT as string
+const outputHtmlFolder = path.join(thisRootPath, outputHtmlSubPath)
+
+if (!fs.existsSync(outputHtmlFolder))
+    fs.mkdirSync(outputHtmlFolder)
+
 export default {
     popplerPath,
     openApiKey,
     imagesOutputFolder,
-    ocrOutputFolder
+    ocrOutputFolder,
+    outputHtmlFolder
 }
 

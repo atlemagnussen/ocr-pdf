@@ -13,9 +13,13 @@ export function getImagesFromOutPath() {
     return imagePaths.map(m => path.join(config.imagesOutputFolder, m))
 }
 
+export function getOcrTxtFilesFromOutPath() {
+    const imagePaths = fs.readdirSync(config.ocrOutputFolder)
+    return imagePaths.map(m => path.join(config.ocrOutputFolder, m))
+}
+
 export function getOutputFileNameFromInput(inputPath: string) {
     let filename = getFileNameWithoutExtFromPath(inputPath)
     const filenamePath = path.join(config.imagesOutputFolder, filename)
-    console.log(filenamePath)
     return filenamePath
 }

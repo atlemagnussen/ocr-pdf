@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "ocr pdf",
   "scripts": {
-    "test": "cross-env NODE_ENV=test ts-node ./test.ts"
+    "start": "cross-env NODE_ENV=test ts-node ./src/index.ts",
+    "test": "cross-env NODE_ENV=test ts-node ./src/test.ts"
   },
   "keywords": [
     "ocr",
