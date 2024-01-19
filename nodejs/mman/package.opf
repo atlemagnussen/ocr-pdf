@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
 <package xmlns="http://www.idpf.org/2007/opf" xml:lang="en" unique-identifier="uid" version="3.0">
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <dc:title id="title">Spiritual Science: Essential Teachings</dc:title>
-    <dc:creator>Vesica Institute</dc:creator>
+    <dc:title id="title">Multidimensional Man</dc:title>
+    <dc:creator>Jurgen Ziewe</dc:creator>
     <dc:language>en</dc:language>
-    <dc:identifier id="uid">vesica.org.essential.teachings</dc:identifier>
-    <dc:date>2023-07-01</dc:date>
-    <dc:publisher>Vesica Institute</dc:publisher>
-    <dc:description>Essential Spiritual Teachings by Vesica Institute</dc:description>
-    <dc:rights>Vesica Institute</dc:rights>
-    <meta refines='#author' property='file-as'>Gilbert, Robert</meta>
+    <dc:identifier id="uid">ziewe.jurgen.multi.dimensional.man</dc:identifier>
+    <dc:date>2024-01-01</dc:date>
+    <dc:publisher>Jurgen Ziewe</dc:publisher>
+    <dc:description>Multidimensional Man by Jurgen Ziewe</dc:description>
+    <dc:rights>Jurgen Ziewe</dc:rights>
+    <meta refines='#author' property='file-as'>Ziewe, Jurgen</meta>
     <meta refines='#author' property='role' scheme='marc:relators'>aut</meta>
 
   </metadata>
@@ -18,13 +18,15 @@
     <item id="css" href="style.css" media-type="text/css"/>
     <item id="cover" href="cover.jpg" media-type="image/jpeg" properties="cover-image"/>
     <item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
-    <item id="part" href="part1.html" media-type="application/xhtml+xml"/>
+    <item id="introduction" href="introduction.html" media-type="application/xhtml+xml"/>
+    <item id="part1" href="part1.html" media-type="application/xhtml+xml"/>
     <item id="part2" href="part2.html" media-type="application/xhtml+xml"/>
     <item id="part3" href="part3.html" media-type="application/xhtml+xml"/>
     <item id="appendix" href="appendix.html" media-type="application/xhtml+xml"/>
   </manifest>
   <spine>
     <itemref idref="titlepage"/>
+    <itemref idref="introduction"/>
     <itemref idref="part1"/>
     <itemref idref="part2"/>
     <itemref idref="part3"/>
